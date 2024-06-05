@@ -6,6 +6,7 @@
 
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter_boiler_plate/global/constants/api_string.dart';
 import 'package:flutter_boiler_plate/global/utils/services/debug.dart';
 import 'package:flutter_boiler_plate/global/utils/services/end_point.dart';
 import 'package:flutter_boiler_plate/global/utils/share_preference/local_storage.dart';
@@ -14,7 +15,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
 
 class HttpHandler {
-  static String baseURL = APIEndPoint.baseUrl;
+  static String baseURL = ApiString.baseUrl;
 
   static Future<Map<String, String>> _getHeaders({
     String? manualToken,

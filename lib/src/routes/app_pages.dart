@@ -1,7 +1,7 @@
 // App Pages
 
 import 'package:flutter_boiler_plate/src/view/home/binding/home_binding.dart';
-import 'package:flutter_boiler_plate/src/view/home/view/home_view.dart';
+import 'package:flutter_boiler_plate/src/view/home/view/flutter_bolierplate/api_list_screen.dart';
 import 'package:flutter_boiler_plate/src/view/intro/binding/on_boarding_binding.dart';
 import 'package:flutter_boiler_plate/src/view/intro/view/on_boarding_view.dart';
 import 'package:flutter_boiler_plate/src/view/splash/binding/splash_binding.dart';
@@ -25,7 +25,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.HOME_SCREEN,
-      page: () => const HomeView(),
+      page: () => const ApiListScreen(),
       binding: HomeBinding(),
       transition: Transition.cupertino,
     ),
